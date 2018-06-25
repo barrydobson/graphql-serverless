@@ -1,0 +1,34 @@
+service: bd-graphql
+
+provider:
+  name: azure
+  location: UK West
+
+plugins:
+  - serverless-azure-functions
+  - serverless-webpack
+  - serverless-offline
+
+package:
+  individually: true
+  # exclude:
+  #   - node_modules/**
+  #   - .gitignore
+  #   - .git/**
+  #   - README.md
+  #   - .vscode/**
+
+functions:
+  graphql:
+    handler: graphql/index.handler
+    events:
+      - http: true
+        x-azure-settings:
+          authLevel : anonymous
+          route: graphql
+          methods:
+            - post
+      - http: true
+        x-azure-settings:
+          name: res
+          direction: out

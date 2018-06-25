@@ -1,0 +1,40 @@
+{
+  "name": "azure-nodejs",
+  "version": "1.0.0",
+  "description": "Azure Functions sample for the Serverless framework",
+  "main": "handler.js",
+  "keywords": [
+    "azure",
+    "serverless"
+  ],
+  "scripts": {
+    "clean": "rm -f ./*-function.json && rm -rf .serverless .webpack",
+    "pack": "npm run clean && sls package",
+    "test": "echo No tests set up yet"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "apollo-cache-inmemory": "^1.0.0",
+    "apollo-client": "^2.0.1",
+    "apollo-link": "^1.0.0",
+    "apollo-link-error": "^1.0.0",
+    "apollo-link-http": "^1.0.0",
+    "apollo-server-core": "^1.3.6",
+    "azure-functions-typescript": "0.0.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-source-map-support": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.5.0",
+    "react-apollo": "^2.0.0",
+    "serverless-azure-functions": "^0.5.0",
+    "serverless-offline": "^3.16.0",
+    "serverless-webpack": "^5.1.5",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
