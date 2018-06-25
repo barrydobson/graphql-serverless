@@ -34,7 +34,6 @@
     "serverless-azure-functions": "^0.5.0",
     "serverless-offline": "^3.16.0",
     "serverless-webpack": "^5.1.5",
-    "webpack": "^3.10.0",
-    "webpack-node-externals": "^1.7.2"
+    "webpack": "^3.10.0"
   }
 }

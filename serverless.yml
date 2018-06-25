@@ -32,3 +32,16 @@ functions:
         x-azure-settings:
           name: res
           direction: out
+  graphiql:
+    handler: graphiql/index.handler
+    events:
+      - http: true
+        x-azure-settings:
+          authLevel : anonymous
+          route: graphiql
+          methods:
+            - get
+      - http: true
+        x-azure-settings:
+          name: res
+          direction: out

@@ -5,10 +5,10 @@
             "type": "httpTrigger",
             "direction": "in",
             "name": "req",
-            "route": "graphql",
+            "route": "graphiql",
             "authLevel": "anonymous",
             "methods": [
-                "post"
+                "get"
             ]
         },
         {
@@ -18,5 +18,5 @@
         }
     ],
     "entryPoint": "handler",
-    "scriptFile": "graphql/index.js"
+    "scriptFile": "graphiql/index.js"
 }
